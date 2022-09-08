@@ -1,0 +1,48 @@
+{
+  "applications": "*",
+  "changelogDate": "20220908114533",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "player",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "height",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "baskets",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "assists",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Player",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "team",
+      "otherEntityRelationshipName": "player",
+      "relationshipName": "team",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20220908114534",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "team",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Team",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "player",
+      "otherEntityRelationshipName": "team",
+      "relationshipName": "player",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

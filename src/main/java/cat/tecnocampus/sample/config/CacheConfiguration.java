@@ -48,6 +48,9 @@ public class CacheConfiguration {
             createCache(cm, cat.tecnocampus.sample.domain.User.class.getName());
             createCache(cm, cat.tecnocampus.sample.domain.Authority.class.getName());
             createCache(cm, cat.tecnocampus.sample.domain.User.class.getName() + ".authorities");
+            createCache(cm, cat.tecnocampus.sample.domain.Player.class.getName());
+            createCache(cm, cat.tecnocampus.sample.domain.Team.class.getName());
+            createCache(cm, cat.tecnocampus.sample.domain.Team.class.getName() + ".players");
             // jhipster-needle-ehcache-add-entry
         };
     }
